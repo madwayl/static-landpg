@@ -41,7 +41,7 @@ ul {
 
 li {
     flex: 1 1 auto;
-    color: antiquewhite;
+    color: #8C4843;
     font-weight: bold;
 }
 
@@ -64,14 +64,14 @@ li {
     align-items: center;
     justify-content: center;
     gap: 56px;
-    padding: 36px 24px 64px;
+    padding: 36px 36px 64px;
 }
 
 .section1 .text {
     flex: 2 0 15em;
     text-align: left;
     font-size: 18px;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 img.main {
@@ -99,6 +99,7 @@ button {
     font-size: 18px;
     font-weight: 600;
     height: max-content;
+    width: max-content;
 }
 
 button:hover {
@@ -122,7 +123,7 @@ button:hover {
     flex: 1 1 auto;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
     padding: 40px 10px;
     margin-top: 20px;
@@ -132,6 +133,7 @@ button:hover {
     width: 300px;
     margin: 10px 20px;
     text-align: center;
+    overflow: hidden;
 }
 
 img {
@@ -193,7 +195,8 @@ p.name {
     color: beige;
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
+    flex: 0 1 40em;
+    justify-content: space-around;
     gap: 56px;
     align-items: center;
 }
