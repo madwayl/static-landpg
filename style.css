@@ -63,12 +63,12 @@ li {
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
-    gap: 56px;
+    gap: 36px;
     padding: 36px 36px 64px;
 }
 
 .section1 .text {
-    flex: 2 0 15em;
+    flex: 0.5 2 20em;
     text-align: left;
     font-size: 18px;
     padding: 20px 0px;
