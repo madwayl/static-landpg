@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+
 * {
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -8,13 +9,15 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
     background-color: bisque;
 }
 
-.header,.section1,.footer {
+.header,
+.section1,
+.footer {
     background-color: #C5AFA4;
 }
 
@@ -26,12 +29,13 @@ body {
     height: 5em;
     border-radius: 50%;
     border: none;
+    margin-right: auto;
 }
 
 ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     align-items: center;
     width: 300px;
     padding: 0;
@@ -47,10 +51,10 @@ li {
 
 .header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    flex: 1;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* width: auto; */
+    /* flex: 1; */
     padding: 24px 52px;
 }
 
@@ -60,7 +64,7 @@ li {
 .section1 {
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     align-items: center;
     justify-content: center;
     gap: 36px;
@@ -82,7 +86,7 @@ img.main {
 
 h1 {
     font-size: 48px;
-    font-weight: 900;
+    /* font-weight: 900; */
     margin-bottom: -10px;
     margin-top: -10px;
 }
@@ -93,7 +97,7 @@ h1 {
 button {
     background-color: burlywood;
     height: 2em;
-    border: 1px solid #8C4843;
+    border: 2px solid #8C4843;
     padding: 6px 12px;
     border-radius: 5px;
     font-size: 18px;
@@ -111,11 +115,15 @@ button:hover {
 /* Section 2 */
 
 .section2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
     padding-top: 40px;
+}
+
+.section2>h1 {
+    text-align: center
 }
 
 .cardcont {
@@ -163,16 +171,16 @@ img {
     align-items: center;
 }
 
-.section3 p{
+.section3 p {
     margin: 0;
     text-align: center;
 }
 
 p.name {
-    display: block;
+    /* display: block;
     text-align: right;
     float: right;
-    width: max-content;
+    width: max-content; */
     font-weight: 700;
     font-size: 32px;
     font-style: normal;
@@ -208,4 +216,78 @@ p.name {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width:52em) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 0px;
+    }
+
+    .header>img {
+        margin-right: revert;
+    }
+
+    .header>ul {
+        margin: revert
+    }
+
+    * {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .section1 {
+        padding: 24px;
+    }
+
+    .section1>.text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p.name {
+        font-size: 20px;
+        align-self: center;
+    }
+
+    .finalsection {
+        flex-wrap: wrap;
+        margin: 50px 50px;
+        gap: 10px;
+    }
+
+    .finalsection>.text {
+        text-align: center;
+    }
+}
+
+@media (max-width:35em) {
+
+    * {
+        font-size: 16px;
+    }
+
+    .section1 {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p.name {
+        font-size: 18px;
+    }
+
 }
